@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+   
+  
+  <style> 
+    
+  *{font-family: 'Poppins', sans-serif;}
+    /* Sticky Navigation Bar */
+    header {
+      
+
+    background-color: blueviolet;
+    padding: 17px;
+    position: sticky;
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: -3px 10px;
+}
+
+    /* Table Styling */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px 0;
+    }
+    th, td {
+      padding: 8px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    /* Form Styling */
+    form {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      text-align: left;
+    }
+    input {
+      width: 95%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .CustomBox {
+  width: 800px;
+  height: auto;
+  padding: 50px;
+  background-color:white;
+  margin: 20px;
+  align-items: center;
+  border-radius: 12px;
+}
+.CustomBoxRegister{
+  width: 800px;
+  height: auto;
+  padding: 50px;
+  background-color:white;
+  margin: 20px;
+  
+}
+
+
+  </style>
+</head>
+<body style="background-color: rgb(248, 230, 245);">
+
+<header>
+  <nav>
+    <a href="#books-section" style="float:left">Library System</a>
+    <a href="#Model" style="float:right">Logout</a>
+    <a href="#register-section" style="float:right">Contact Us</a>
+    <a href="#register-section" style="float:right">Register</a>
+    <a href="#books-section" style="float:right">Books</a>
+
+  </nav>
+</header>
+
+<center>
+    <div class="CustomBox">
+    
+        <section id="books-section">
+            <h2>Books</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Book ID</th>
+                  <th>Title</th>
+                  <th>Author</th>
+                  <th>Genre</th>
+                  <th>Availability</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Populate rows with data -->
+                <tr>
+                    
+                    <td>1</td>
+                    <td style="color: blue;"><u><b>Book Title 1</b></u>
+                        
+                        <table style="color: black;">
+                            <tr>
+                              <td >Publication Date: 2000</td>
+                              <tr><td>Page Count: 250</td></tr>
+                              <tr><td>ISBN : 123-4567890123</td></tr>
+                            </tr>
+                          </table>
+                    </td>
+                    <td>Author Name1</td>
+                    <td>Genre1</td>
+                    <td>Available</td>
+                  </tr>
+                  <tr>
+                    
+                    <td>2</td>
+                    <td style="color: blue;"><u><b>Book Title 2</b></u>
+                        
+                        <table style="color: black;">
+                            <tr>
+                              <td>Publication Date: 2000</td>
+                              <tr><td>Page Count: 250</td></tr>
+                              <tr><td>ISBN : 123-4567890123</td></tr>
+                            </tr>
+                          </table>
+                    </td>
+                    <td>Author Name2</td>
+                    <td>Genre2</td>
+                    <td>Not Available</td>
+                  </tr>
+                  <tr>
+                    
+                    <td>3</td>
+                    <td style="color: blue;"><u><b>Book Title 3</b></u>
+                        
+                        <table style="color: black;">
+                            <tr>
+                              <td>Publication Date: 2000</td>
+                              <tr><td>Page Count: 250</td></tr>
+                              <tr><td>ISBN : 123-4567890123</td></tr>
+                            </tr>
+                          </table>
+                    </td>
+                    <td>Author Name3</td>
+                    <td>Genre3</td>
+                    <td>Available</td>
+                  </tr>
+                 
+              </tbody>
+            </table>
+          </section>
+    </div>
+    <div class="CustomBoxRegister">
+    
+        <section id="register-section">
+            <h2>Registration Form</h2>
+            <form>
+              <label for="first-name">First Name:</label>
+              <input type="text" id="first-name" name="first-name" required>
+              <label for="last-name">Last Name:</label>
+              <input type="text" id="last-name" name="last-name" required>
+              <label for="dob">Date of Birth:</label>
+              <input type="date"  id="dob" name="dob" required>
+              <label for="age">Age: </label>
+              <input type="number" id="age" name="age" min="5" max="100" required>
+              <label for="emailid">Email ID:</label>
+              <input type="text" id="emailid" name="emailid" required>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+              <label for="confirmpassword">Confirm Password:</label>
+              <input type="password" id="confirmpassword" name="confirmpassword" required>
+              <!-- Add other input fields here -->
+              <button style="background-color: blueviolet;">Register</button>
+            </form>
+          </section>
+          
+    </div>
+
+</center>
+
+
+
+</body>
+</html>
+
+
